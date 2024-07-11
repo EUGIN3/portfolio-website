@@ -1,0 +1,83 @@
+/* Works CSS */
+
+#works {
+    background-color: #2F2F2F;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+
+#works .main-container {
+    width: 80%;
+    flex-direction: column;
+}
+
+.work-title h2 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.project-main-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 50px;
+}
+
+.project-fade {
+    margin: 20px;
+    border-radius: 14px;
+}
+
+.project-container {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-direction: column;
+    border: 1px solid rgba(233, 210, 0, 0.222);
+    box-shadow: rgba(20, 20, 20, 0.447) 0px 3px 8px;
+    opacity: .6;
+    transition: all .3s;
+}
+
+.project-container:hover {
+    scale: 1.03;
+    opacity: 2;
+    transform: translateY(-8px);
+    background-color: rgba(233, 210, 0, 0.018);
+}
+
+.project-container h2 {
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 0;
+    text-align: center;
+}
+
+.project-container img {
+    width: 280px;
+    height: 180px;
+    object-fit: contain;
+    background-color: transparent;
+    margin: 28px 0;
+}
+
+.project-button-container {
+    width: 280px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-button-container .yellow-btn {
+    padding-right: 40px;
+    padding-left: 40px;
+    border: 1px solid #E9D100;
+    margin-left: 8px;
+}
+
+.project-button-container .source {
+    text-decoration: none;
+    width: 100%;
+}
+

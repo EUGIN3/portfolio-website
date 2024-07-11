@@ -1,0 +1,634 @@
+/* For larger monitor screen */
+@media (min-width: 1700px) {
+    /* Hero */
+    #hero .main-container {
+        width: 75%;
+    }
+
+    div.dp-con {
+        width: 550px;
+    }
+
+    /* About */
+    #about .main-container {
+        width: 75%;
+    }
+
+    /* Works */
+    #works .main-container {
+        width: 75%;
+    }
+
+    .project-main-container {
+        grid-template-rows: 490px 490px;
+    }
+
+
+    /* Contacts */
+    #contacts .main-container {
+        width: 75%;
+    }
+
+    form {
+        width: 620px;
+    }
+}
+
+@media (min-width: 2000px) {
+    /* Hero */
+    #hero .main-container {
+        width: 70%;
+    }
+
+    div.dp-con {
+        width: 570px;
+    }
+
+    /* About */
+    #about .main-container {
+        width: 70%;
+    }
+
+    /* Works */
+    #works .main-container {
+        width: 70%;
+    }
+
+
+    /* Contacts */
+    #contacts .main-container {
+        width: 70%;
+    }
+
+    form {
+        width: 650px;
+    }
+}
+
+@media (min-width: 2500px) {
+    /* General */
+    p {
+        font-size: 18px;
+    }
+
+    /* Hero */
+    #hero .main-container {
+        width: 65%;
+    }
+
+    div.dp-con {
+        width: 600px;
+    }
+
+    /* About */
+    #about .main-container {
+        width: 65%;
+    }
+
+    /* Works */
+    #works .main-container {
+        width: 65%;
+    }
+
+    .project-main-container {
+        grid-template-rows: 560px 560px;
+    }
+
+    /* Contacts */
+    #contacts .main-container {
+        width: 65%;
+    }
+
+    form {
+        width: 700px;
+    }
+}
+/* For larger monitor screen */
+
+
+/* For smaller monitor screen */
+@media (max-width: 1500px) {
+    /* Hero */
+    #hero .main-container {
+        width: 85%;
+    }
+
+    div.dp-con {
+        width: 378px;
+        margin: 0 40px 0 40px;
+    }
+
+    .facebook .tooltip,
+    .instagram .tooltip,
+    .linkedin .tooltip,
+    .telegram .tooltip,
+    .github .tooltip {
+        margin-left: 56px;
+        margin-top: 12px;
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+
+    /* About */
+    #about .main-container {
+        width: 85%;
+    }
+
+    .left-about {
+        margin-right: 100px;
+    }
+
+    /* Works */
+    #works .main-container {
+        width: 85%;
+    }
+
+    .project-container img { 
+        width: 270px;
+        height: 180px;
+    }
+
+    .project-button-container .yellow-btn {
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+
+    .project-button-container .rev-yellow-btn{
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    /* Contacts */
+    #contacts .main-container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 1300px) { 
+    /* Hero */
+    span.name {
+        line-height: 100px;
+    }
+
+    div.dp-con {
+        width: 358px;
+        margin: 0 0px 0 30px;
+    }
+
+    /* About */
+    .about-header-container h2 {
+        line-height: 30px;
+    }
+
+    .left-about {
+        margin-right: 50px;
+    }
+
+    /* Works */
+    #works .main-container {
+        width: 90%;
+    }
+    
+    .project-main-container {
+        grid-template-rows: 400px 400px;
+    }
+
+    .project-container img { 
+        width: 210px;
+        height: 135px;
+    } 
+
+    .project-button-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+
+    .project-button-container .yellow-btn {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 8px;
+    }
+
+    .project-button-container .rev-yellow-btn{
+        width: 100%;
+    }
+
+    /* Contacts */
+    .contact-header {
+        font-weight: 800;
+    
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .contact-sm-container {
+        margin-bottom: 20px;
+    }
+    
+    form {
+        width: 500px;
+    }
+}
+/* For smaller monitor screen */
+
+
+/* For tablet screen */
+/* For landscape screen orientation */
+@media (max-height: 710px) and (max-width: 1000px) {
+    #hero {
+        height: auto;
+    }
+
+    #about {
+        height: auto;
+    }
+
+    .about-header-container h2 {
+        margin-top: 100px;
+    }
+
+    .about-btn-container {
+        margin-bottom: 84px;
+    }
+
+}
+/* For landscape screen orientation */
+
+@media (max-width: 1000px) {
+    /* Header */
+    header {
+        padding: 90px 80px 0px 80px;
+    }
+
+    /* General */
+    .mobile-elements {
+        display: block;    
+    }
+
+    /* Hero */
+    #hero .main-container {
+        flex-direction: column;
+        margin-top: 100px;
+    } 
+
+    #hero span.opacity,
+    header .nav-main-con nav,
+    header .nav-main-con .nav-btn,
+    .welcome,
+    .right-hero,
+    .hero-paragraph,
+    .dp-con,
+    .dp-con img,
+    .see-work,
+    .left-about {
+        display: none;
+    }
+
+    #hero .yellow-btn {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-bottom: 100px;
+    }
+
+    .toggle_btn,
+    .dropdown-menu {
+        display: block;
+    }
+
+    .left-hero {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .profile-for-mobile,
+    .profile-for-mobile img {
+        height: 350px;
+        width: 350px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 40px;
+        background-color: #e9d20087;
+    }
+
+    .hero-social-icon {
+        display: flex;
+        margin: 20px 0 40px 0;
+    }
+
+    .hero-social-icon a {
+        margin: 0 16px;
+        background-color: #e9d200dd;
+        
+        width: 35px;
+        height: 35px;
+    }
+
+    .hero-social-icon a:hover {
+        background-color: #e9d200dd;
+    }
+    
+    .hero-social-icon a:active {
+        background-color: #e9d200dd;
+    }
+
+    .hero-social-icon i {
+        font-size: 16px;
+        color: #3a3a3a;
+        text-shadow: none;
+    }
+
+    .left-hero h1,
+    span.name {
+        line-height: 50px;
+        text-align: center;
+        font-size: 58px;
+    }
+
+    .left-hero h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    /* About */
+    #about .main-container {
+        width: 60%;
+    }
+
+    .about-header-container h2 {
+        text-align: center;
+        line-height: 80px;
+    }
+
+    .about-paragraph-container {
+        text-align: center;
+    }
+
+    .about-btn-container {
+        margin-top: 40px;
+        justify-content: center;
+    }
+
+    /* Works */
+    .project-main-container {  
+        grid-template-rows: 400px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Contacts */
+    .contact-tt {
+        bottom: 40px;
+    }
+}
+
+@media (max-width: 700px) {
+    /* Works */
+    #works .main-container {
+        width: 70%;
+    }
+
+    .project-main-container {  
+        grid-template-rows: 400px;
+        grid-template-columns: 1fr;
+    }
+}
+/* For tablet screen */
+
+
+/* For smartphone screen */
+@media (max-width: 600px) {
+    /* Navigation */
+    header .dropdown-menu.open  {
+        top: 150px;
+    }
+    
+    header.sticky .dropdown-menu.open  {
+        top: 80px;
+    }
+
+    header .dropdown-menu.open,
+    header.sticky .dropdown-menu.open   {
+        right: 20px;
+        left: 20px;
+        width: unset;
+    } 
+
+    header .dropdown-menu {
+        right: 20px;
+        left: 20px;
+        width: unset;
+    }
+
+    header.sticky .dropdown-menu {
+        right: 20px;
+        left: 20px;
+        width: unset;
+    }
+
+    /* About */
+    #about .main-container {
+        width: 80%;
+    }   
+
+    /* Contacts */
+    #works .main-container {
+        width: 90%;
+    }
+
+    form {
+        width: 370px;
+    }
+
+    /* Footer */
+    footer h2 {
+        font-size: 16px;
+    }
+
+    footer h3 {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    /* Header */
+    header {
+        padding: 50px 60px 50px 60px;
+    }
+
+    /* Hero */
+    .profile-for-mobile,
+    .profile-for-mobile img {
+        height: 320px;
+        width: 320px;
+    }
+
+    .left-hero h1,
+    span.name {
+        line-height: 50px;
+        font-size: 48px;
+    }
+
+    .left-hero h2 {
+        font-size: 35px;
+    }
+
+    /* About */
+    #about .main-container {
+        width: 85%;
+    } 
+}
+
+@media (max-width: 460px) {
+    /* Hero */
+    .profile-for-mobile,
+    .profile-for-mobile img {
+        height: 300px;
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .left-hero h1,
+    span.name {
+        line-height: 50px;
+        font-size: 40px;
+    }
+
+    .left-hero h2 {
+        font-size: 34px;
+    }
+
+    .hero-social-icon {
+        display: flex;
+        margin: 20px 0 30px 0;
+    }
+
+    .hero-social-icon a {
+        margin: 0 8px;
+    
+        width: 32px;
+        height: 32px;
+    }
+
+    /* About */
+    #about .main-container {
+        width: 93%;
+    } 
+
+    .about-paragraph-container p {
+        letter-spacing: 0;
+    }
+
+    .about-btn-container {
+        margin-top: 10px;
+    }
+
+    .about-header-container h2,
+    .work-title h2,
+    .contact-header {
+        font-size: 38px;
+    }
+
+    .about-header-container h2 {
+        line-height: 40px;
+    }
+
+    /* Contacts */
+    .contact-sm-container i {
+        font-size: 16px;
+    }
+
+    .icon-con {     
+        margin: 8px;
+        padding: 7px 10px 6px 10px;
+    }
+
+    form {
+        width: 300px;
+    }
+
+    /* Footer */
+    footer h2 {
+        font-size: 14px;
+    }
+
+    footer h3 {
+        font-size: 12px;
+    }
+
+    .contact-tt {
+        bottom: 36px;
+    }
+
+    .ctt-facebook,
+    .ctt-instagram {
+        left: -23px;
+    }
+
+    .ctt-linkedin,
+    .ctt-telegram {
+        left: -19px;
+    }
+
+    .ctt-github {
+        left: -14px;
+    }
+}
+
+@media (max-width: 400px) {
+    #about {
+        padding-top: 40px;
+    }
+
+    .about-header-container h2,
+    .work-title h2,
+    .contact-header {
+        font-size: 36px;
+    }
+
+    /* Hero */
+    #hero .main-container {
+        width: 95%;
+    }
+
+    #hero .yellow-btn {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .profile-for-mobile,
+    .profile-for-mobile img {
+        height: 250px;
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+    .left-hero h1,
+    span.name {
+        line-height: 50px;
+        font-size: 36px;
+    }
+
+    .left-hero h2 {
+        font-size: 28px;
+    }
+
+    /* Contacts */
+    .contact-sm-container i {
+        font-size: 16px;
+    }
+
+    .icon-con {     
+        margin: 8px;
+        padding: 7px 10px 6px 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+/* For smartphone screen */

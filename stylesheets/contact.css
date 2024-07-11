@@ -1,0 +1,148 @@
+/* Contacts CSS */
+
+#contacts {
+    height: 109vh;
+    background-color: #3a3a3a;
+}
+
+#contacts .main-container {
+    flex-direction: column;
+    width: 80%;
+    padding: 30px;
+}
+
+#send-msg-btn {
+    border-radius: 4px;
+    font-weight: 800;
+}
+
+.contact-header {
+    font-weight: 800;
+
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+form {  
+    display: flex;
+    flex-direction: column;
+    
+    width: 600px;
+}
+
+textarea {
+    resize: none;
+}
+
+input {
+    height: 40px;
+}
+
+input,
+textarea {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+	color: #EFEFEF;
+    border: 1px solid rgba(233, 210, 0, 0.321);
+    box-shadow: rgba(32, 32, 32, 0.305) 0px 3px 8px;
+    transition: all .3s;
+    
+    padding: 12px;
+    font-size: 16px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #efefef7e;
+    text-shadow: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    background-color: rgba(233, 210, 0, 0.018);
+    border: 1px solid rgb(233, 210, 0);
+}
+
+.contact-sm-container {
+    margin-bottom: 40px;
+}
+
+.contact-sm-container i {
+    color: #efefef7e;
+    text-shadow: none;
+    transition: all .3s;
+
+    font-size: 18px;
+}
+
+.icon-con {
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: rgba(32, 32, 32, 0.403) 0px 3px 8px;
+    background-color: rgba(84, 83, 83, 0.929);
+    transition: all .3s;
+    
+    margin: 0 12px;
+    padding: 11px 13px 10px 13px;
+}
+
+.contact-tt {
+    background-color: transparent;
+    
+    transition: all .3s;
+    background-color: transparent;
+    bottom: 48px;
+}
+
+.ctt-facebook,
+.ctt-instagram {
+    left: -20px;
+}
+
+.ctt-linkedin {
+    left: -15px;
+}
+
+.ctt-telegram {
+    left: -16px;
+}
+
+.ctt-github {
+    left: -8px;
+}
+
+.contact-sm-container .icon-con:hover {
+    border: none;
+    background-color: rgb(233, 210, 0);
+    transform: translateY(-2px);
+    scale: 1.05;
+}
+
+.contact-sm-container .icon-con:active {
+    background-color: rgb(179, 161, 0);
+}
+
+.contact-sm-container .icon-con:hover i {
+    color: #3a3a3a;
+}
+
+.contact-sm-container .icon-con:hover .contact-tt {
+    opacity: 1;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+    border: 1px solid rgb(233, 210, 0);
+    -webkit-text-fill-color: #EFEFEF;
+    -webkit-box-shadow: 0 0 0px 1000px #3a3a3a inset;
+    transition: background-color 5000s ease-in-out 0s;
+}

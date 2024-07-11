@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title -->
+    <title>My Portfolio Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="stylesheets/general.css"> <!-- For general CSS -->
+    <link rel="stylesheet" href="stylesheets/navbar.css"> <!-- For navigation bar CSS -->
+    <link rel="stylesheet" href="stylesheets/hero.css"> <!-- For hero/home CSS -->
+    <link rel="stylesheet" href="stylesheets/about.css"> <!-- For about CSS -->
+    <link rel="stylesheet" href="stylesheets/work.css"> <!-- For works/projects CSS -->
+    <link rel="stylesheet" href="stylesheets/contact.css"> <!-- For contacts CSS -->
+    <link rel="stylesheet" href="stylesheets/footer.css"> <!-- For footer CSS -->
+    <link rel="stylesheet" href="stylesheets/responsive.css"> <!-- For responsiveness CSS -->
+
+    <!-- Font. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- For reveal animation. ( https://michalsnik.github.io/aos/ ).-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+    <body>
+        <!-- Header Start -->
+        <header>
+            <div class="nav-main-con"  data-aos="fade-down" data-aos-duration="900">
+                <!-- Logo -->
+                <a href="#" onclick="gine()">
+                    <img class="logo" src="images/GINE.png" alt="Website's logo.">
+                </a>
+                <!-- Logo -->
+
+                <!-- Links for pc monitor -->
+                <nav>
+                    <ul>
+                        <a href="#hero" class="flex-elements">HOME</a>
+                        <a href="#about" class="flex-elements">ABOUT</a>
+                        <a href="#works" class="flex-elements">WORK</a>
+                        <a href="#contacts" class="flex-elements">CONTACT</a>
+                    </ul>
+                </nav>
+
+                <a href="#contacts" class="nav-btn"><button class="yellow-btn">Contact us</button></a>
+                <!-- Links for pc monitor -->
+
+            <!-- Links for smaller screen (tablets and phone) -->
+                <!-- Toggle Icon -->
+                <div class="toggle_btn" onclick="closeNav()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- Toggle Icon -->
+            </div>
+
+            <!-- Dropdown menu links for smaller screen. -->
+            <div class="dropdown-menu">
+                <nav>
+                    <ul>
+                        <a href="#hero" class="flex-elements" onclick="closeNav()">HOME</a>
+                        <a href="#about" class="flex-elements" onclick="closeNav()">ABOUT</a>
+                        <a href="#works" class="flex-elements" onclick="closeNav()">WORK</a>
+                        <a href="#contacts" class="flex-elements" onclick="closeNav()">CONTACT</a>
+                        <button class="yellow-btn" onclick="visitcv();closeNav()">View Resume</button>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Dropdown menu links for smaller screen. -->
+            <!-- Links for smaller screen (tablets and phone) -->
+        </header>
+        <!-- Header End -->
+
+        <!-- Hero/Home Start -->
+        <section id="hero" class="flex-elements">
+
+            <div id="background-image"></div>
+
+
+            <div class="main-container flex-elements">
+                <div class="left-hero">
+                    <div id="down">
+                        <p class="yellow-text welcome" data-aos="fade-down" data-aos-duration="900">Welcome to my portfolio!</p>
+                    </div>
+
+                    <!-- Profile for smaller screen -->
+                    <div class="profile-for-mobile mobile-elements" data-aos="zoom-in" data-aos-duration="900">
+                        <img src="images/profile.png" alt="Photo of Eugine.">
+                    </div>
+                    <!-- Profile for smaller screen -->
+
+                    <div data-aos="fade-right" data-aos-duration="900">
+                        <h1>Hello, I'm <span class="yellow-text name">Eugine</span></h1>
+
+                        <h2>a <span class="yellow-text">Python</span> Developer.</h2>
+                    </div>
+
+                    <p class="hero-paragraph" data-aos="fade-left" data-aos-duration="900">
+                        <span class="opacity">
+                            Passionate junior Python developer dedicated to clean code and problem-solving. Seeking opportunities to contribute to dynamic projects, collaborate with experienced teams, and enhance my skills in software development, data analysis, and automation.
+                        </span>
+                    </p>
+
+                    <!-- Social media links for smaller screen. -->
+                    <div class="hero-social-icon mobile-elements" data-aos="fade-down" data-aos-duration="900" data-aos-offset="10">
+                        <div class="facebook">
+                            <a href="https://www.facebook.com/eugine0703?mibextid=ZbWKwL" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                        </div>
+
+                        <div class="instagram">
+                            <a href="https://www.instagram.com/_ugine?igsh=MWl4cnhmY2Q5NWNqaA==" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </div>
+
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/casa%C3%B1ada-mark-eugine-7b0a97318/" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+
+                        <div class="telegram">
+                            <a href="https://web.telegram.org/a/" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </div>
+
+                        <div class="github">
+                            <a href="https://github.com/EUGIN3" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Social media links for smaller screen. -->
+                    
+                    <div data-aos="fade-up" data-aos-duration="900" data-aos-offset="10">
+                        <a href="#contacts"><button class="yellow-btn">Contact us</button></a>
+
+                        <a href="#works" class="yellow-text see-work">See my works &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Social media links for larger screen. -->
+                <div class="right-hero">
+                    <!-- Profile for larger screen -->
+                    <div class="dp-con" class="dp-con" data-aos="zoom-in" data-aos-duration="900">
+                        <img src="images/profile.png" alt="">
+                    </div>
+                    <!-- Profile for larger screen -->
+
+                    <div class="hero-social-icon" data-aos="fade-left" data-aos-duration="900">
+                        <div class="facebook">
+                            <div class="tooltip">Facebook</div>
+                            
+                            <a href="https://www.facebook.com/eugine0703?mibextid=ZbWKwL" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-square-facebook"></i>
+                            </a>
+                        </div>
+
+                        <div class="instagram">
+                            <div class="tooltip">Instagram</div>
+
+                            <a href="https://www.instagram.com/_ugine?igsh=MWl4cnhmY2Q5NWNqaA==" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-square-instagram"></i>
+                            </a>
+                        </div>
+
+                        <div class="linkedin">
+                            <div class="tooltip">LinkedIn</div>
+                            
+                            <a href="https://www.linkedin.com/in/casa%C3%B1ada-mark-eugine-7b0a97318/" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </a>
+                        </div>
+
+                        <div class="telegram">
+                            <div class="tooltip">Telegram</div>
+
+                            <a href="https://web.telegram.org/a/" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-telegram"></i>
+                            </a>
+                        </div>
+
+                        <div class="github">
+                            <div class="tooltip">Github</div>
+
+                            <a href="https://github.com/EUGIN3" target="_blank" class="flex-elements">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Social media links for larger screen. -->
+            </div>
+        </section>
+        <!-- Hero/Home End -->
+
+        <!-- About Start -->
+        <section id="about" class="flex-elements">
+            <div class="main-container flex-elements">
+                <div class="left-about">
+                    <div class="image-container" data-aos="fade-right" data-aos-duration="900">
+                        <img src="images/about-profile.png" alt="Photo of Eugine.">
+                    </div>
+                </div>
+                
+                <div class="right-about">
+                    <div class="about-header-container" data-aos="fade-down" data-aos-duration="900">
+                        <h2>ABOUT ME:</h2>
+                    </div>
+
+                    <div class="about-paragraph-container" data-aos="zoom-in" data-aos-duration="900">
+                        <p class="opacity-2">
+                            I am <span> Mark Eugine Casañada</span>, a dedicated junior Python developer from San Narciso, Quezon, Philippines. I completed my junior and senior high school education at Godofredo M. Tan Integrated School of Arts and Trades, which laid a strong foundation for my passion in information technology. Currently, I am a second-year student pursuing a Bachelor of Science in Information Technology at Dalubhasaan ng Lungsod ng Lucena, where my knowledge and skills have been significantly broadened. I am passionate about clean code and efficient problem-solving, with robust skills in frontend development using HTML, CSS, and JavaScript. My intermediate proficiency in Python has enabled me to create various projects, demonstrating my ability to apply theoretical knowledge to practical challenges. Beyond my technical expertise, I am committed to continuous learning and improvement, always seeking new challenges to enhance my coding abilities. My educational journey and hands-on experiences have equipped me with the tools necessary to tackle complex problems and develop innovative solutions, making me a valuable asset to any team.
+                        </p>
+                    </div>
+
+                    <div class="about-btn-container" data-aos="fade-up" data-aos-duration="900" data-aos-offset="10">
+                        <a href="https://eugin3.github.io/online-resume/" target="_blank"><button class="rev-yellow-btn">Resume</button></a>
+
+                        <a href="#contacts"><button class="yellow-btn">Contact us</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About End -->
+
+        <!-- Works Start -->
+        <section id="works" class="flex-elements">
+            <div class="main-container flex-elements">
+                <!-- Project section main title -->
+                <div class="work-title" data-aos="fade-down" data-aos-duration="900">
+                    <h2>PROJECTS</h2>
+                </div>
+                <!-- Project section main title -->
+
+                <div class="project-main-container">
+                    <!-- Project 1 -->
+                    <div class="project-fade flex-elements" data-aos="zoom-in" data-aos-duration="900">
+                        <div class="project-container flex-elements">
+                            <h2>MP3 Player</h2>
+    
+                            <img src="images/project.png" alt="" class="project-image">
+    
+                            <div class="project-button-container">
+                                <button class="rev-yellow-btn source" onclick="projectLink('a')">Source code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 1 -->
+
+                    <!-- Project 2 -->
+                    <div class="project-fade flex-elements" data-aos="zoom-in" data-aos-duration="900">
+                        <div class="project-container flex-elements">
+                            <h2>YouTube MP3 and MP4 Downloader</h2>
+    
+                            <img src="images/yt-downloader.png" alt="" class="project-image">
+    
+                            <div class="project-button-container">
+                                <button class="rev-yellow-btn source" onclick="projectLink('b')">Source code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+
+                    <!-- Project 3 -->
+                    <div class="project-fade flex-elements" data-aos="zoom-in" data-aos-duration="900">
+                        <div class="project-container flex-elements">
+                            <h2>Apartment Management System</h2>
+    
+                            <img src="images/apartment.png" alt="" class="project-image">
+    
+                            <div class="project-button-container">
+                                <button class="rev-yellow-btn source" onclick="projectLink('c')">Source code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+
+                    <!-- Project 4 -->
+                    <div class="project-fade flex-elements" data-aos="zoom-in" data-aos-duration="900">
+                        <div class="project-container flex-elements">
+                            <h2>Shoe Collection Management System</h2>
+    
+                            <img src="images/shoe.png" alt="" class="project-image">
+    
+                            <div class="project-button-container">
+                                <button class="rev-yellow-btn source" onclick="projectLink('d')">Source code</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+
+                    <!-- Project 5 -->
+                    <div class="project-fade flex-elements" data-aos="zoom-in" data-aos-duration="900">
+                        <div class="project-container flex-elements">
+                            <h2>Calculator</h2>
+    
+                            <img src="images/calculator.png" alt="" class="project-image">
+    
+                            <div class="project-button-container">
+                                <button class="rev-yellow-btn" onclick="projectLink('e')">Source code</button>
+                                <button class="yellow-btn" onclick="projectLink('f')">Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+
+                    <!-- Project 6 -->
+                    <div class="project-fade flex-elements" data-aos="zoom-in" data-aos-duration="900">
+                        <div class="project-container flex-elements">
+                            <h2>Online Resume</h2>
+    
+                            <img src="images/online-resume.png" alt="" class="project-image">
+    
+                            <div class="project-button-container">
+                                <button class="rev-yellow-btn" onclick="projectLink('g')">Source code</button>
+                                <button class="yellow-btn" onclick="projectLink('h')">Preview</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                </div>
+            </div>
+        </section>
+        <!-- Works End -->
+
+        <!-- Contacts Start -->
+        <section id="contacts" class="flex-elements">
+            <div class="main-container flex-elements">
+                <div class="contact-header"  data-aos="fade-down" data-aos-duration="900">
+                    CONTACT US
+                </div>
+
+                <!-- Contact social media links (ICONS). -->
+                <div class="contact-sm-container flex-elements" data-aos="fade-down" data-aos-duration="900">
+                    <a href="https://www.facebook.com/eugine0703?mibextid=ZbWKwL" target="_blank">
+                        <div class="icon-con">
+                            <div class="contact-tt ctt-facebook">Facebook</div>
+                            
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://www.instagram.com/_ugine?igsh=MWl4cnhmY2Q5NWNqaA==" target="_blank">
+                        <div class="icon-con">
+                            <div class="contact-tt ctt-instagram">Instagram</div>
+
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/casa%C3%B1ada-mark-eugine-7b0a97318/" target="_blank">
+                        <div class="icon-con">
+                            <div class="contact-tt ctt-linkedin">LinkedIn</div>
+                            
+                            <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://web.telegram.org/a/" target="_blank">
+                        <div class="icon-con">
+                            <div class="contact-tt ctt-telegram">Telegram</div>
+                            
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/EUGIN3" target="_blank">
+                        <div class="icon-con">
+                            <div class="contact-tt ctt-github">Github</div>
+                            
+                            <i class="fa-brands fa-github"></i>
+                        </div>
+                    </a>
+                </div>
+                <!-- Contact social media links (ICONS). -->
+
+                <!-- Uses a external JavaScript ( https://web3forms.com/ ) for sending messages through email. -->
+                <form action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up" data-aos-duration="900">
+                    <!-- Access key for web3forms --->
+                    <input type="hidden" name="access_key" value="a46561b5-560c-4966-97de-1b7cad564710"> 
+                    <input type="text" name="name" placeholder="Name:" spellcheck="false" id="contact-name">
+                    <input type="email" name="email" placeholder="Email Address:" spellcheck="false" id="contact-email">
+                    <textarea name="message" rows="8" placeholder="Message:" id="contact-message"></textarea>
+                    <!-- Submit button -->
+                    <button class="yellow-btn" id="send-msg-btn"" onclick="clearInput()">Send</button>
+                </form>
+            </div>
+        </section>
+        <!-- Contacts End -->
+
+        <!-- Footer Start -->
+        <footer class="flex-elements">
+            <h2>Copyright &copy; 2024 | All Rights Reserved</h2>
+
+            <h3>Developed by: <span class="yellow-text">Mark Eugine Casañada</span></h3>
+        </footer>
+        <!-- Footer End -->
+
+
+        <!-- The external Javascipts. -->
+        <script src="js/code.js"></script>
+
+        <!-- For reveal animation. ( https://michalsnik.github.io/aos/ ).-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
+</html>

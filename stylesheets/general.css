@@ -1,0 +1,138 @@
+/* General CSS for all styling that is generic. */
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: 0;
+	font-family: 'Abel';
+	color: #EFEFEF;
+	scroll-behavior: smooth;
+	text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.375);
+}
+
+p {
+    font-size: 16px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+body {
+    background-color: #2F2F2F;
+}
+
+.yellow-text {
+	color: #E9D100;
+}
+
+.yellow-btn {
+    position: relative;
+    background-color: #E9D100;
+    color: #232323;
+    box-shadow: rgba(0, 0, 0, 0.803) 1px 2px 2px 0px;
+    cursor: pointer;
+    transition: .2s;
+    letter-spacing: 1px;
+    user-select: none;
+    text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.375);
+    border-radius: 4px;
+}
+
+.yellow-btn:hover {
+    opacity: .85;
+}
+
+.yellow-btn:active {
+    opacity: .75;
+}
+
+.rev-yellow-btn {
+	background-color: transparent;
+	border: 1.5px solid #E9D100;
+	color: #E9D100;
+    box-shadow: rgba(0, 0, 0, 0.803) 1px 2px 2px 0px;
+    cursor: pointer;
+    transition: .2s;
+    letter-spacing: 1px;
+    user-select: none;
+    text-shadow: .5px .5px .5px #e9d2002e;
+    border-radius: 4px;
+}
+
+.rev-yellow-btn:hover {
+    background-color: #E9D100;
+	text-shadow: .5px .5px .5px rgba(0, 0, 0, 0.375);
+	color: #232323;
+}
+
+.rev-yellow-btn:active {
+    opacity: .75;
+}
+
+.yellow-btn, 
+.rev-yellow-btn  {
+    padding: 6px 18px;
+    font-size: 16px;
+}
+
+.flex-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.tooltip,
+.contact-tt {
+    cursor: auto;
+    position: absolute;
+    font-size: 14px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #efefefb7;
+    background-color: #3c3c3cc2;
+    text-shadow: none;
+    opacity: 0;
+    transition: opacity .3s;
+    pointer-events: none; 
+
+    font-size: 14px;
+    padding: 6px 14px;
+    border-radius: 4px;
+
+}
+
+.opacity {
+    opacity: .7;
+}
+
+.opacity-2 {
+    opacity: .9;
+}
+
+.mobile-elements {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  	background: #efefef11;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(239, 239, 239, 0.389);
+	border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  	background: rgba(239, 239, 239, 0.515);
+}

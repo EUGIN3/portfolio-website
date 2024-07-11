@@ -1,0 +1,55 @@
+/* About CSS */
+
+#about {
+    height: 109vh;
+    background-color: #3a3a3a;
+    user-select: none;
+}
+
+#about .main-container {
+    width: 80%;
+}
+
+.about-header-container h2 {
+    font-weight: 800;
+    line-height: 80px;
+}
+
+.left-about {
+    margin-right: 120px;
+}
+
+.image-container {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+.image-container,
+.image-container img {
+    background-color: #E9D100;
+
+    object-fit: fill;
+}
+
+.about-paragraph-container p {
+    letter-spacing: .8px;
+}
+
+.about-btn-container {
+    display: flex;
+    justify-content: end;
+    margin-top: 30px;
+}
+
+.about-btn-container .rev-yellow-btn {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.about-btn-container .yellow-btn {
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+

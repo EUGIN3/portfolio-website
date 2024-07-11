@@ -1,0 +1,119 @@
+/* Hero/Home CSS */
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+#hero {
+    height: 109vh;
+    background-color: #2F2F2F;
+    user-select: none;
+    margin-top: 70px;
+}
+
+
+#hero .main-container {
+    width: 80%;
+}
+
+a.yellow-text {
+    text-decoration: none;
+}
+
+h1{
+    font-size: 76px;
+    line-height: 60px;
+}
+
+h1, h2 {
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+span.name {
+    font-family: "Aclonica";
+
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+.see-work {
+    margin-left: 28px;
+
+    font-size: 14px;
+}
+
+.see-work:hover {
+    opacity: .9;
+}
+
+.see-work:active {
+    opacity: .85;
+}
+
+.dp-con {
+    margin: 0 50px 0 50px;
+    height: 109vh;
+    width: 450px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.dp-con img {
+    width: 100%;
+}
+
+.right-hero {
+    display: flex;
+    align-items: center;
+}
+
+.hero-social-icon a {
+    text-decoration: none;
+    border-radius: 50%;
+    transition: all .3s;
+
+    width: 50px;
+    height: 50px;
+}
+
+.hero-social-icon a:hover {
+    background-color: #3c3c3cc2;
+}
+
+.hero-social-icon a:active {
+    background-color: #4f4f4fc2;
+}
+
+.hero-social-icon i {
+    color: #efefef8b;
+    
+    font-size: 20px;
+}
+
+.facebook,
+.instagram,
+.linkedin,
+.telegram,
+.github {
+    border-radius: 50%;
+}
+
+.facebook:hover .tooltip,
+.instagram:hover .tooltip,
+.linkedin:hover .tooltip,
+.telegram:hover .tooltip,
+.github:hover .tooltip {
+    opacity: 1;
+}
+
+.facebook .tooltip,
+.instagram .tooltip,
+.linkedin .tooltip,
+.telegram .tooltip,
+.github .tooltip {
+    margin-left: 64px;
+    margin-top: 8px
+}
